@@ -7,10 +7,10 @@ export function Hero({ onLaunch }: { onLaunch: () => void }) {
             Сенсационный аппарат
           </p>
           <h2 className="font-display font-black text-4xl sm:text-5xl md:text-6xl leading-[1.05]">
-            Кинематограф-<span className="italic">резак</span>
+            Нарезчик <span className="italic">видео</span>
           </h2>
           <p className="mt-5 text-base sm:text-lg md:text-xl text-ink/80 max-w-xl">
-            Механический ассистент, обращающий длинные фильмы в карманные
+            Механический ассистент, обращающий длинные ролики в карманные
             миниатюры для всеобщего увеселения в электрических сетях.
           </p>
           <div className="mt-7 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
