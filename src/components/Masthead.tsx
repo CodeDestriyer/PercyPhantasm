@@ -9,16 +9,18 @@ export function Masthead({ onLaunch }: { onLaunch: () => void }) {
         <span>Бесплатно</span>
       </div>
       <div className="rule-thin" />
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10 flex flex-col items-center text-center">
-        <img
-          src={logo}
-          alt="Percy Phantasm"
-          className="h-36 w-36 sm:h-44 sm:w-44 md:h-52 md:w-52 object-contain"
-        />
-        <h1 className="mt-4 sm:mt-6 font-display font-black tracking-tight text-[2.5rem] leading-[0.95] sm:text-6xl md:text-7xl">
-          Percy&nbsp;Phantasm
-        </h1>
-        <p className="mt-3 italic text-ink/70 text-sm md:text-base px-2">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <div className="flex items-center justify-center gap-5 sm:gap-7 md:gap-9">
+          <img
+            src={logo}
+            alt="Percy Phantasm"
+            className="h-24 w-24 sm:h-36 sm:w-36 md:h-44 md:w-44 object-contain shrink-0"
+          />
+          <h1 className="font-display font-black tracking-tight text-[2rem] leading-[0.95] sm:text-6xl md:text-7xl">
+            Percy&nbsp;Phantasm
+          </h1>
+        </div>
+        <p className="mt-5 italic text-ink/70 text-sm md:text-base px-2 text-center">
           Кабинет кинооператора — нарезает длинные ролики в короткие
         </p>
       </div>
