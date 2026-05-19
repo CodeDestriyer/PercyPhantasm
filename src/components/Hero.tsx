@@ -48,7 +48,7 @@ function PatentDrawing() {
     <figure className="border-2 border-ink p-3 sm:p-4 bg-paper">
       <div className="border border-ink/40 p-3">
         <img
-          src="/assets/schematic.svg"
+          src="/assets/schematic.jpg"
           alt="Схема: рука мастера режет киноленту"
           className="w-full h-auto block"
         />

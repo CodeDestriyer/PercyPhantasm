@@ -2,9 +2,6 @@ import { useState } from "react";
 import { Masthead } from "./components/Masthead";
 import { Hero } from "./components/Hero";
 import { Principle } from "./components/Principle";
-import { Features } from "./components/Features";
-import { Testimony } from "./components/Testimony";
-import { Pricing } from "./components/Pricing";
 import { Colophon } from "./components/Colophon";
 
 function App() {
@@ -38,9 +35,6 @@ function App() {
       <Masthead onLaunch={onLaunch} />
       <Hero onLaunch={onLaunch} />
       <Principle />
-      <Features />
-      <Testimony />
-      <Pricing onLaunch={onLaunch} />
       <Colophon onLaunch={onLaunch} />
     </div>
   );

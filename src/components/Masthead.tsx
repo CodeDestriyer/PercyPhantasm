@@ -27,11 +27,8 @@ export function Masthead({ onLaunch }: { onLaunch: () => void }) {
       <div className="rule-double" />
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[11px] sm:text-xs smallcaps">
         <a href="#principle" className="hover:underline">Как работает</a>
-        <a href="#features" className="hover:underline">Достоинства</a>
-        <a href="#testimony" className="hover:underline">Отзывы</a>
-        <a href="#pricing" className="hover:underline">Прейскурант</a>
         <button onClick={onLaunch} className="hand-pointer hover:underline">
-          Запустить
+          Запустить аппарат
         </button>
       </nav>
       <div className="rule-thin" />
