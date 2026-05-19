@@ -32,10 +32,10 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      <Masthead onLaunch={onLaunch} />
+      <Masthead />
       <Hero onLaunch={onLaunch} />
       <Principle />
-      <Colophon onLaunch={onLaunch} />
+      <Colophon />
     </div>
   );
 }

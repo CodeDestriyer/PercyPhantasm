@@ -1,6 +1,6 @@
 import logo from "../assets/logo.jpg";
 
-export function Masthead({ onLaunch }: { onLaunch: () => void }) {
+export function Masthead() {
   return (
     <header className="border-b-2 border-ink">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between text-[10px] sm:text-xs smallcaps gap-3">
@@ -25,13 +25,6 @@ export function Masthead({ onLaunch }: { onLaunch: () => void }) {
         </p>
       </div>
       <div className="rule-double" />
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[11px] sm:text-xs smallcaps">
-        <a href="#principle" className="hover:underline">Как работает</a>
-        <button onClick={onLaunch} className="hand-pointer hover:underline">
-          Запустить аппарат
-        </button>
-      </nav>
-      <div className="rule-thin" />
     </header>
   );
 }
