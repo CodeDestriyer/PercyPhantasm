@@ -45,68 +45,16 @@ export function Hero({ onLaunch }: { onLaunch: () => void }) {
 
 function PatentDrawing() {
   return (
-    <figure className="border-2 border-ink p-3 sm:p-4 bg-cream/40">
+    <figure className="border-2 border-ink p-3 sm:p-4 bg-paper">
       <div className="border border-ink/40 p-3">
-        <svg
-          viewBox="0 0 320 360"
-          className="w-full h-auto"
-          stroke="#1A1613"
-          fill="none"
-          strokeWidth="1.2"
-        >
-          <rect x="6" y="6" width="308" height="348" strokeDasharray="2 4" />
-          <text x="160" y="26" textAnchor="middle" fontSize="10" fill="#1A1613" fontFamily="JetBrains Mono">
-            FIG. I — APPARATUS
-          </text>
-
-          <circle cx="100" cy="160" r="46" />
-          <circle cx="100" cy="160" r="34" />
-          <circle cx="100" cy="160" r="6" fill="#1A1613" />
-          {Array.from({ length: 12 }).map((_, i) => {
-            const a = (i * Math.PI) / 6;
-            return (
-              <line
-                key={i}
-                x1={100 + Math.cos(a) * 34}
-                y1={160 + Math.sin(a) * 34}
-                x2={100 + Math.cos(a) * 46}
-                y2={160 + Math.sin(a) * 46}
-              />
-            );
-          })}
-
-          <rect x="160" y="130" width="120" height="60" />
-          <rect x="170" y="140" width="60" height="40" />
-          <circle cx="252" cy="160" r="10" />
-          <line x1="262" y1="160" x2="290" y2="160" />
-          <line x1="280" y1="152" x2="290" y2="160" />
-          <line x1="280" y1="168" x2="290" y2="160" />
-
-          <path d="M40 250 Q160 220 280 250" />
-          <path d="M40 260 Q160 230 280 260" />
-          <line x1="80" y1="248" x2="80" y2="262" />
-          <line x1="140" y1="240" x2="140" y2="252" />
-          <line x1="200" y1="240" x2="200" y2="252" />
-          <line x1="260" y1="248" x2="260" y2="262" />
-
-          <text x="100" y="225" textAnchor="middle" fontSize="9" fill="#1A1613" fontFamily="JetBrains Mono">
-            а. бобина
-          </text>
-          <text x="220" y="210" textAnchor="middle" fontSize="9" fill="#1A1613" fontFamily="JetBrains Mono">
-            б. анализатор
-          </text>
-          <text x="160" y="290" textAnchor="middle" fontSize="9" fill="#1A1613" fontFamily="JetBrains Mono">
-            в. кинолента
-          </text>
-
-          <line x1="20" y1="320" x2="300" y2="320" strokeDasharray="1 3" />
-          <text x="160" y="338" textAnchor="middle" fontSize="9" fill="#1A1613" fontFamily="JetBrains Mono" fontStyle="italic">
-            scale 1 : 8 · sketched by hand
-          </text>
-        </svg>
+        <img
+          src="/assets/schematic.svg"
+          alt="Схема: рука мастера режет киноленту"
+          className="w-full h-auto block"
+        />
       </div>
       <figcaption className="mt-3 text-center text-[11px] sm:text-xs smallcaps">
-        Чертёж № 1 — Общий вид
+        Чертёж № 1 — Ручной раскрой ленты
       </figcaption>
     </figure>
   );
