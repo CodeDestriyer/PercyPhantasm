@@ -13,20 +13,20 @@ function App() {
 
   if (launched) {
     return (
-      <main className="min-h-screen flex items-center justify-center px-6">
-        <div className="border-2 border-ink p-10 text-center max-w-md">
-          <p className="smallcaps text-xs text-ink/70">Аппаратъ запущенъ</p>
+      <main className="min-h-screen flex items-center justify-center px-4 sm:px-6">
+        <div className="border-2 border-ink p-8 sm:p-10 text-center max-w-md w-full">
+          <p className="smallcaps text-xs text-ink/70">Аппарат запущен</p>
           <h1 className="font-display font-black text-3xl mt-3">
-            Здѣсь будетъ продуктъ
+            Здесь будет продукт
           </h1>
           <p className="mt-3 text-sm text-ink/80">
-            Заглушка: сюда подключимъ интерфейсъ загрузки фильмы и нарѣзки.
+            Заглушка: сюда подключим интерфейс загрузки ролика и нарезки.
           </p>
           <button
             onClick={() => setLaunched(false)}
             className="btn-engraved mt-6"
           >
-            ← Назадъ въ кабинетъ
+            ← Назад в кабинет
           </button>
         </div>
       </main>

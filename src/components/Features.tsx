@@ -2,33 +2,33 @@ import { SectionTitle } from "./Principle";
 
 const features = [
   {
-    title: "Распознаваніе драмы",
-    body: "Аппаратъ безошибочно угадываетъ моменты наивысшаго напряженія дѣйствія.",
+    title: "Распознавание драмы",
+    body: "Аппарат безошибочно угадывает моменты наивысшего напряжения действия.",
     icon: "M10 2v6M10 12v6M2 10h6M12 10h6",
   },
   {
-    title: "Сохраненіе лика",
-    body: "Говорящій всегда пребываетъ въ центрѣ кадра, какъ на портретѣ мастера.",
+    title: "Сохранение лица",
+    body: "Говорящий всегда пребывает в центре кадра, как на портрете мастера.",
     icon: "circle",
   },
   {
     title: "Изящные титры",
-    body: "Подписи накладываются съ типографскимъ вкусомъ, безъ грубости и излишествъ.",
+    body: "Подписи накладываются с типографским вкусом, без грубости и излишеств.",
     icon: "M2 6h16M2 10h12M2 14h16",
   },
   {
-    title: "Вертикальный форматъ",
-    body: "Готовыя миніатюры соотвѣтствуютъ пропорціямъ карманныхъ телефонныхъ устройствъ.",
+    title: "Вертикальный формат",
+    body: "Готовые миниатюры соответствуют пропорциям карманных устройств.",
     icon: "rect",
   },
   {
-    title: "Многоязычіе",
-    body: "Распознаётъ рѣчь на множествѣ нарѣчій европейскихъ и заморскихъ.",
+    title: "Многоязычие",
+    body: "Распознаёт речь на множестве европейских и заморских наречий.",
     icon: "M3 10h14M10 3v14",
   },
   {
-    title: "Скоростной разборъ",
-    body: "Часовая лента превращается въ дюжину миніатюръ за время чашки чаю.",
+    title: "Скоростной разбор",
+    body: "Часовой ролик превращается в дюжину миниатюр за время чашки чаю.",
     icon: "clock",
   },
 ];
@@ -36,11 +36,11 @@ const features = [
 export function Features() {
   return (
     <section id="features" className="border-t-2 border-ink">
-      <div className="max-w-6xl mx-auto px-6 py-14">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-14">
         <SectionTitle kicker="Часть вторая" title="Достоинства аппарата" />
-        <div className="grid md:grid-cols-3 gap-px bg-ink mt-10 border-2 border-ink">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-ink mt-10 border-2 border-ink">
           {features.map((f) => (
-            <div key={f.title} className="bg-paper p-6">
+            <div key={f.title} className="bg-paper p-5 sm:p-6">
               <FeatureIcon kind={f.icon} />
               <h3 className="font-display text-xl mt-4">{f.title}</h3>
               <p className="mt-2 text-sm text-ink/80 leading-relaxed">{f.body}</p>

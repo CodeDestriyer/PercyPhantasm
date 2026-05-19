@@ -1,32 +1,32 @@
 const steps = [
   {
     n: "I",
-    title: "Заряженіе ленты",
-    body: "Достопочтенный операторъ передаётъ длинную фильму въ пріёмный отсѣкъ аппарата.",
+    title: "Заряжение ленты",
+    body: "Достопочтенный оператор передаёт длинный ролик в приёмный отсек аппарата.",
   },
   {
     n: "II",
-    title: "Анализъ сценъ",
-    body: "Внутренній механизмъ распознаётъ драматическіе моменты, реплики и лики говорящихъ.",
+    title: "Анализ сцен",
+    body: "Внутренний механизм распознаёт драматические моменты, реплики и лица говорящих.",
   },
   {
     n: "III",
     title: "Раскрой и склейка",
-    body: "Невидимыя ножницы вырѣзаютъ лучшее, прилагая титры съ должнымъ изяществомъ.",
+    body: "Невидимые ножницы вырезают лучшее, прилагая титры с должным изяществом.",
   },
   {
     n: "IV",
-    title: "Готовыя миніатюры",
-    body: "Изъ выходного лотка являются вертикальные шортсъ-фильмы для электрическихъ сѣтей.",
+    title: "Готовые миниатюры",
+    body: "Из выходного лотка являются вертикальные шортсы для электрических сетей.",
   },
 ];
 
 export function Principle() {
   return (
     <section id="principle" className="border-t-2 border-ink bg-cream/30">
-      <div className="max-w-6xl mx-auto px-6 py-14">
-        <SectionTitle kicker="Часть первая" title="Принципъ дѣйствія" />
-        <div className="grid md:grid-cols-4 gap-6 mt-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-14">
+        <SectionTitle kicker="Часть первая" title="Принцип действия" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6 mt-10">
           {steps.map((s) => (
             <article
               key={s.n}
@@ -57,9 +57,9 @@ export function SectionTitle({
   title: string;
 }) {
   return (
-    <div className="text-center">
-      <p className="smallcaps text-xs text-ink/70">{kicker}</p>
-      <h2 className="font-display font-black text-3xl md:text-5xl mt-2 ornament inline-block">
+    <div className="text-center px-2">
+      <p className="smallcaps text-[11px] sm:text-xs text-ink/70">{kicker}</p>
+      <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl mt-2 ornament inline-block">
         {title}
       </h2>
     </div>
